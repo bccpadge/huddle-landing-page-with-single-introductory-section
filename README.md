@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-css-grid-yNQkO_uiIn)
 - Live Site URL: [Github Pages](https://bccpadge.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
