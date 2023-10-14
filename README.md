@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Live Site URL: [Github Pages](https://bccpadge.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 

@@ -207,10 +207,16 @@ body {
 }
 
 /* !media query */
+@media (min-width: 60em) {
+  .mockup__image {
+    width: 31.25rem;
+  }
+}
+
 @media (min-width: 64em) {
   body {
     background-image: url("../images/bg-desktop.svg");
-    background-size: contain;
+    background-size: 85%;
     background-position: left;
     max-width: 100%;
     padding: 3.25rem 5rem 2.5rem 4.375rem;
