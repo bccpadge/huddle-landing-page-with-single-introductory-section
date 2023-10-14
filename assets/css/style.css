@@ -1,0 +1,255 @@
+/* !css variables */
+:root {
+  --clr-violet: 257 40% 49%;
+  --clr-soft-magenta: 300 69% 71%;
+  --clr-white: 0 0% 100%;
+
+  --ff-headings: "Poppins", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+
+  --spacing-1: 2rem;
+  --spacing-2: 2.125rem;
+  --spacing-3: 3.75rem;
+  --spacing-4: 2.5rem;
+}
+
+/* !reset */
+/* !Box sizing rules */
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* !Remove defaut margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* !Remove list styles on ul, ol elements* with class */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* !A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* !Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* !Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* !Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* !sometimes referred to as .sr-only */
+.visually-hidden:not(:focus):not(:active):not(:focus-within) {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* !general styles */
+body {
+  font-family: var(--ff-body);
+  background-color: hsl(var(--clr-violet));
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: var(--spacing-1) var(--spacing-2);
+  display: grid;
+  grid-template-rows: max-content;
+  max-width: 36.875rem;
+  margin-inline: auto;
+}
+
+/* !utility classes */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* !header styles */
+.header {
+  margin-block-end: var(--spacing-3);
+}
+
+.header img {
+  width: 7.5rem;
+}
+
+/* !main styles */
+.mockup__image {
+  height: auto;
+  margin-block-end: var(--spacing-1);
+}
+
+.huddle__text-group {
+  color: hsl(var(--clr-white));
+  text-align: center;
+}
+
+.huddle__title {
+  font-size: clamp(1.5625rem, 0.2958rem + 3.0047vw, 3rem);
+  font-family: var(--ff-headings);
+}
+
+.huddle__description {
+  line-height: 1.5rem;
+}
+
+/* !button styles */
+.button {
+  display: block;
+  text-decoration: none;
+  justify-self: center;
+}
+
+.button--register {
+  font-size: 0.9375rem;
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-violet));
+  padding: 0.75rem 5.5rem;
+  border-radius: 1.875rem;
+  margin-block-end: 3rem;
+  transition: 350ms ease-in-out;
+  box-shadow: 0 5px 10px 5px rgba(0 0 0 / 0.21);
+}
+
+.button--register:is(:hover, :focus-visible) {
+  background-color: hsl(var(--clr-soft-magenta));
+  color: hsl(var(--clr-white));
+}
+
+/* !social list styles */
+.social__list {
+  justify-content: center;
+  align-items: center;
+}
+
+.social__list-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+  border: 1px solid hsl(var(--clr-white));
+  border-radius: 50%;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: grid;
+  place-items: center;
+}
+
+.social__list-link:is(:hover, :focus-visible) {
+  color: hsl(var(--clr-soft-magenta));
+  border-color: hsl(var(--clr-soft-magenta));
+}
+
+/* !attribution */
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  color: hsl(var(--clr-white));
+  display: none;
+}
+.attribution a {
+  color: inherit;
+}
+
+/* !media query */
+@media (min-width: 64em) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: contain;
+    background-position: left;
+    max-width: 100%;
+    padding: 3.25rem 5rem 2.5rem 4.375rem;
+  }
+
+  .header {
+    margin-block-end: 5.3125rem;
+  }
+
+  .header img {
+    width: auto;
+    height: 2.8125rem;
+  }
+
+  .mockup__image {
+    width: 37.5rem;
+    margin-block-end: 0;
+  }
+
+  .huddle__container {
+    display: flex;
+    gap: 3.625rem;
+  }
+
+  .huddle__text-group {
+    align-self: center;
+    text-align: left;
+  }
+
+  .huddle__description {
+    max-width: 55ch;
+  }
+
+  .button--register {
+    justify-self: start;
+    padding: 0.9375em 4em;
+  }
+
+  .social__list {
+    justify-content: flex-end;
+  }
+}
