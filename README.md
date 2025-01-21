@@ -12,7 +12,6 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Built with](#built-with)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -25,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop.png)
+![Hudddle Desktop Preview](./desktop.png)
 
 ### Links
 
@@ -43,24 +42,16 @@ Users should be able to:
 
 ### Useful Resources
 
-- [Font-size Clamp generator](https://clamp.font-size.app/) - I used this font-size clamp generator for the title.
 - [Remix icons](https://remixicon.com/) - For the social icons, I used remix icons font library.
 
 ## Author
 
 <p align="left">
 <a href="https://www.frontendmentor.io/profile/bccpadge">
-<img src="https://img.shields.io/badge/FrontendMentor-57b1e6?style=for-the-badge&logo=frontendmentor&logoColor=white">
+<img src="https://img.shields.io/badge/FrontendMentor-57b1e6?style=for-the-badge&logo=frontendmentor&logoColor=white"/>
 </a>
-<a href="https://github.com/bccpadge">
-<img src="https://img.shields.io/badge/Github-9757e6?style=for-the-badge&logo=github&logoColor=white">
- </a>
-<a href="https://www.linkedin.com/in/rebecca-padgett23">
-<img src="https://img.shields.io/badge/Linkedin-004182?style=for-the-badge&logo=linkedin&logoColor=white">
+<a href="https://www.linkedin.com/in/rebeccapadgett121">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 </p>
-
-## Acknowledgments
-
-[Youtube Tutorial](https://www.youtube.com/watch?v=sUgBKapGQGE)

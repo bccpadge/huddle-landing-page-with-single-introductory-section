@@ -9,11 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-  <!-- !google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet" />
   <!-- !remix icons cdn -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <!-- !css -->
@@ -22,26 +17,26 @@
 
 <body>
   <header class="header">
-    <h1 class="visually-hidden">
-      Huddle landing page with single introductory section
-    </h1>
-    <img src="./assets/images/logo.svg" width="120" height="29" alt="Huddle's logo" />
+    <a href="#">
+      <img class="logo__image" src="./assets/images/logo.svg" width="264" height="65" alt="Huddle's logo">
+    </a>
   </header>
   <main class="huddle__container">
-    <img class="mockup__image" src="./assets/images/illustration-mockups.svg" width="307" height="219" alt=""
-      aria-hidden="true" />
-    <article class="huddle__text-group grid">
-      <h2 class="huddle__title">Build The Community Your Fans Will Love</h2>
-      <p class="huddle__description">
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you
-        engage in genuine discussion.
-      </p>
-      <a href="#" class="button button--register" aria-label="click here to register">Register</a>
+    <img class="mockup__image" src="./assets/images/illustration-mockups.svg" width="300" height="214"
+      aria-hidden="true" alt="">
+    <article class="huddle__text-group">
+      <h1 class="huddle__title">Build The Community
+        <span>Your Fans Will Love</span>
+      </h1>
+      <p class="huddle__description"> Huddle re-imagines the way we build communities. You have a voice, but so does
+        your audience. Create
+        connections
+        with your users as you engage in genuine discussion.</p>
+      <a href="#" class="button button--register">Register</a>
     </article>
   </main>
   <footer>
-    <ul class="social__list flex">
+    <ul class="social__list">
       <li>
         <a href="#" class="social__list-link" aria-label="facebook profile for Huddle">
           <i class="ri-facebook-fill" aria-hidden="true"></i>
